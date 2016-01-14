@@ -1,0 +1,662 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+
+/*------------------------
+base css
+-------------------------- */
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+
+/*------------------------------------------------
+
+font Anders for the logo
+*/
+
+
+@font-face {
+    font-family: 'Anders';
+    src: url('../fonts/Anders.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*------------------------------------------------
+
+basic styles
+*/
+
+
+
+body {
+     color: #7c8081;
+     font-size: 12px;
+     line-height: 16.6px;
+     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+ }
+
+
+h1 {
+	font-size: 40px;
+	font-weight: 800;
+	color:#fff;
+  padding-bottom: 20px;
+}
+
+
+h2 {
+    font-size: 30px;
+    font-weight: 400; 
+    color: rgb(124, 128, 129);
+    font-family: inherit;
+    line-height: 40px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+
+h3 {
+	
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.75em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+
+p { font-size: 18px;
+	  font-weight: 300;
+    line-height: 27px;
+    text-align: left;
+}
+
+
+small {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+ul {
+	list-style: square;
+	font-size: 13px;
+	font-style: light;
+}
+
+
+img {
+	padding: 5px;
+ }
+
+a {
+color: #333;
+}
+
+/*--------------------------------------------
+helpers---------------------------------------*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*------------------------
+wrapper centered;
+-------------------------- */
+#wrapper{
+  width: 100%;
+  padding:0 0 0 0 ;
+}
+
+/*------------------------
+Masthead section  
+-------------------------- */
+.masthead {
+     background: #f0efef;
+   
+}
+
+
+/* Logo */
+
+.logo p{
+    font-family: 'Anders';
+    color:rgb(131, 211, 201);
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+    margin:0;
+    padding:20px 0 20px 0;
+
+}
+
+
+
+/* Navigation */
+
+.nav {
+  margin: 0;
+  padding:5px 0 5px 0px;
+  list-style: none;
+  text-align: center;
+  background: #E8EEF4;
+ 
+}
+
+
+.nav li{
+  margin: 0;
+  padding: 5px 0 5px 0;
+  display: inline-block;
+}
+
+
+.nav a {
+    color:#7c8081;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.nav a:hover {
+    color: rgb(131, 211, 201);
+    font-weight: 600;
+}
+
+
+
+
+/*------------------------
+Homepage carousel 
+-------------------------- */
+
+
+.carousel {
+    color: #fff;
+    padding: 200px 20px 500px 20px;
+    text-align: center;
+    background: url(../images/carousel-image.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+/* tagline */
+.tagline {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    padding: 10px 0px 5px 0px;
+    text-shadow:0 0 50px rgba(0, 0, 0, 0.8);
+    border-bottom: solid 4px #fff;
+    text-transform: uppercase;
+}
+
+/* Learn more button */
+
+.carousel a {
+position:absolute;
+bottom:400px;
+left:40%;
+
+
+
+}
+
+
+
+
+/* scroll down circle */
+a.scroll-down {
+    font-size: 25px;
+    line-height: 28px;
+    border: 5px solid #ffffff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    -webkit-border-radius: 50%;
+    -mox-border-radius: 50%;
+    border-radius: 50%;
+    margin-left: -30px;
+    text-align: center;
+    z-index: 1000;
+    position: absolute;
+    text-align: center;
+    display: block;
+    bottom: 150px;
+    left: 50%;
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:#fff;
+}
+
+
+
+
+/*------------------------
+content  - belief statement section
+-------------------------- */
+
+.belief{
+	background: #f0efef;
+	padding: 30px 200px;
+	text-align: center;
+	font-size: 30px;
+  line-height: 40px;
+	font-weight: 400;
+
+}
+
+
+
+
+/*------------------------
+content - editor's pick (featured product) section
+-------------------------- */
+.featured-product{
+	padding: 20px 120px;
+	text-align: center;
+  background:;
+
+}
+
+.product-image{
+  float: left;
+  width:60%;
+  margin: 0;
+
+}
+
+.product-intro{
+	float:right;
+
+	width:40%;
+	margin-bottom: 20px;
+}
+
+.featured-product h3{
+  text-align: left
+}
+
+
+
+
+
+
+/*------------------------
+content - categories section
+-------------------------- */
+.categories{
+	padding: 20px 50px;
+	text-align: center;
+  background:#E8EEF4;
+}
+
+.topics {
+  background: #fff;
+  padding: 5px;
+}
+
+.topic{
+  float: left;
+  width:50%;
+  position: relative; 
+  padding: 5px;
+}
+
+
+.topic:nth-of-type(odd){
+
+}
+
+.topic img {
+  display: block;
+  width: 100%;
+  height:auto;
+  padding: 0;
+}
+
+
+.categoryHeading {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 30%;
+    color: #fff;
+    text-align: center;
+    border-bottom: 4px solid #fff;
+    border-top: 4px solid #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    line-height: 1.75em;
+    text-transform: uppercase;
+    margin-left: -15%;
+}
+
+.categories a{
+  margin-top: 20px;
+}
+
+
+/*------------------------
+content - featured blog article section
+-------------------------- */
+.blog {
+  padding-bottom: 50px;
+  text-align: center;
+
+}
+
+.blog p{
+ padding:0px 200px 0 200px;
+}
+
+
+
+.blog img{
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+}
+
+.blog a{
+  display:inline-block;
+
+}
+
+
+.blogintro {
+ text-align: center;
+
+}
+
+
+/*------------------------
+content - registration section
+-------------------------- */
+
+.subscribe {
+	text-align: center;
+	background: url(../images/banner.jpg);
+	color:#fff;
+	padding: 30px;
+}
+
+.subscribe h2 {
+  color: white;
+}
+
+.subscribe input{
+ border: none;
+ padding: 11px 9px 8px 9px;
+ position: relative;
+ margin-right: -4px;
+ width: 300px;
+
+}
+
+
+/*------------------------
+Buttons
+-------------------------- */
+
+.button {
+	
+  border-radius: 10px;
+	text-decoration: none;
+  
+}
+
+.button-primary {
+		color: white;
+		font-size: 18px;	
+    background: rgb(131, 211, 201);
+    font-weight:800;
+    border: none;
+    padding: 15px 30px;
+    width: 200px;
+    
+}
+
+.button-read-more{
+    background: none;
+    border: solid 1px;
+    color: inherit;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 30px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    float:left;
+
+}
+
+
+.button-register {
+		color:#fff;
+		font-size: 16px;		
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 300;
+    line-height: 24px;
+    background: rgb(131, 211, 201);
+    border: none;
+    padding: 6px 30px;
+    margin-bottom: -1px;
+
+
+}
+
+.button-more{
+    background: none;
+    border: solid 1px;
+    color: inherit;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 10px 35px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+
+/*------------------------
+body content style
+-------------------------- */
+.bodycontent {
+background-color: #f0efef;
+padding:10px 20px;
+}
+
+/*------------------------
+main column 
+-------------------------- */
+.main-column {
+float:left;
+width:70%;
+padding-right: 10px;
+}
+
+article{
+margin-left: 10px;
+padding: 20px 20px 50px 10px;
+}
+
+.firstcharacter {
+  float: left;
+  font-size: 80px;
+  line-height: 65px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-weight: 600;
+}
+
+.main-column a{
+font-size: 24px;
+font-weight: 600;
+color: #033048;
+text-decoration: none;
+float:right;
+}
+
+
+
+/*------------------------
+side column for homepage
+-------------------------- */
+
+
+.side-column {
+float:right;
+width:30%;
+padding-left: 10px;
+}
+
+
+.side-column h3{
+ font-size: 32px;
+ font-weight: 800;
+ color:#033048
+}
+
+.side-column li{
+ list-style-type: none;
+}
+
+
+.side-column a{
+ font-size: 24px;
+ font-weight:300;
+ text-decoration:none; 
+ color:#033048;
+}
+
+
+.side-column #learn-more{
+font-size: 22px;
+font-weight: 600;
+}
+
+.Categories,
+.About,
+.Ad{
+padding: 20px 10px 50px 10px;
+}
+
+
+
+/*------------------------
+footer  - site footer
+-------------------------- */
+.site-footer {
+  padding: 5px 100px 5px 100px;
+  text-align: center;
+ }
+
+
+.site-footer a{
+  text-decoration: none;
+   
+}
+
+
+.site-footer ul{
+  padding-left: 0;
+
+}
+.site-footer li{
+  list-style: none;
+  display: inline-block;
+
+}
+
+/*------------------------
+Icons 
+-------------------------- */
+
+.icons {
+    text-decoration: none;
+    position: relative;
+  }
+
+    .icon:before {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-transform: none !important;
+    }
+
+
+.icon.circle {
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    border: 0;
+    border-radius: 100%;
+    display: inline-block;
+    font-size: 20px;
+    left: 0;
+    line-height: 2.25em;
+    text-align: center;
+    text-decoration: none;
+    top: 0;
+    width: 2.25em;
+}
+
+/*------------------------
+Icons - facebook 
+-------------------------- */
+
+    .icon.circle.fa-facebook {
+        background: #7490c3;
+        color: #fff;
+    }
+
+/*------------------------
+Icons - Instagram
+-------------------------- */
+    .icon.circle.fa-instagram {
+        background: #125688;
+        color: #fff;
+    }
+
+
+/*------------------------
+Icons - Pinterest
+-------------------------- */
+
+    .icon.circle.fa-pinterest {
+        background: #cb2027;
+        color: #fff;
+    }

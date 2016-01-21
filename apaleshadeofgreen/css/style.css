@@ -54,7 +54,7 @@ h1 {
 
 h2 {
     font-size: 30px;
-    font-weight: 400; 
+    font-weight: 500; 
     color: rgb(124, 128, 129);
     font-family: inherit;
     line-height: 40px;
@@ -175,7 +175,7 @@ Masthead section
 
 .nav a:hover {
     color: rgb(131, 211, 201);
-    font-weight: 600;
+    
 }
 
 
@@ -188,7 +188,7 @@ Homepage carousel
 
 .carousel {
     color: #fff;
-    padding: 200px 20px 500px 20px;
+    padding: 100px 20px 500px 20px;
     text-align: center;
     background: url(../images/carousel-image.jpg) no-repeat center;
     background-size: cover;
@@ -236,7 +236,7 @@ a.scroll-down {
     position: absolute;
     text-align: center;
     display: block;
-    bottom: 150px;
+    bottom: 200px;
     left: 50%;
     margin-left: -30px;
 }
@@ -252,82 +252,6 @@ a.scroll-down {
 }
 
 
-.arrow-wrap {
-  position:absolute;
-  z-index:1;
-  left:50%;
-  top:-5em;
-  margin-left:-5em;
-  width:10em;
-  height:10em;
-  padding:4em 2em;
-  border-radius:50%;
-  font-size:0.5em;
-  display:block;
-  box-shadow:0px 0px 5px 0px #333;
-}
-
-.arrow {
-  float:left;
-  position:relative;
-  width: 0px;
-height: 0px;
-border-style: solid;
-border-width: 3em 3em 0 3em;
-border-color: #ffffff transparent transparent transparent;
-  -webkit-transform:rotate(360deg)
-}
-
-.arrow:after {
-  content:'';
-  position:absolute;
-  top:-3.2em;
-  left:-3em;
-  width: 0px;
-height: 0px;
-border-style: solid;
-border-width: 3em 3em 0 3em;
-border-color: #111 transparent transparent transparent;
-  -webkit-transform:rotate(360deg)
-}
-
-
-.hint {
-  position:absolute;
-  top:0.6em;
-  width:100%;
-  left:0;
-  font-size:2em;
-  font-style:italic;
-  text-align:center;
-  color:#fff;
-  opacity:0;
-}
-
-
-.arrow-wrap:hover .hint {
-  opacity:1;
-}
-
-
-  @-webkit-keyframes arrows {
-    0% { top:0; }
-    10% { top:12%; }
-    20% { top:0; }
-    30% { top:12%; }
-    40% { top:-12%; }
-    50% { top:12%; }
-    60% { top:0; }
-    70% { top:12%; }
-    80% { top:-12%; }
-    90% { top:12%; }
-    100% { top:0; }
-  }
-  
-  .arrow-wrap .arrow {
-    -webkit-animation: arrows 2.8s 0.4s;
-    -webkit-animation-delay: 3s;
-  }
 
 
 /*------------------------
@@ -787,4 +711,120 @@ Icons - Pinterest
     .icon.circle.fa-pinterest {
         background: #cb2027;
         color: #fff;
+    }
+
+
+
+
+/* ---------------------------------------------------------------------
+Responsive Styles
+
+--------------------------------------------------------------------- */
+
+
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        .container {
+            width:100%;
+        }
+
+        .features .feature {
+            width: 100%;
+        }
+
+        .nav li {
+            width: 100%;
+        }
+
+
+        .promo .promo-img {
+            width: 100%;
+        }
+
+
+        .promo .promo-content {
+            width: 100%;
+        }
+
+
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        .container {
+            width:100%;
+        }
+
+        .features .feature {
+            width: 100%;
+        }
+
+        .nav li {
+            width: 100%;
+        }
+
+
+        .promo .promo-img {
+            width: 100%;
+        }
+
+
+        .promo .promo-content {
+            width: 100%;
+        }
+    
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        .container {
+            width:100%;
+        }
+
+        .features .feature {
+            width: 100%;
+        }
+
+        .nav li {
+            width: 100%;
+        }
+
+
+        .promo .promo-img {
+            width: 100%;
+        }
+
+
+        .promo .promo-content {
+            width: 100%;
+        }
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+            .container {
+            width:100%;
+        }
+
+        .features .feature {
+            width: 100%;
+        }
+
+        .nav li {
+            width: 100%;
+        }
+
+
+        .promo .promo-img {
+            width: 100%;
+        }
+
+
+        .promo .promo-content {
+            width: 100%;
+        }
+         
     }

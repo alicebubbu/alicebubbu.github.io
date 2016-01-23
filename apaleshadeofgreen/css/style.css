@@ -1,4 +1,5 @@
-@import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+
 
 /*------------------------
 base css
@@ -40,9 +41,8 @@ body {
      color: #7c8081;
      font-size: 12px;
      line-height: 16.6px;
-     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
- }
-
+     font-family: 'Open Sans', sans-serif;
+}
 
 h1 {
 	font-size: 40px;
@@ -58,8 +58,6 @@ h2 {
     color: rgb(124, 128, 129);
     font-family: inherit;
     line-height: 40px;
-    padding-bottom: 15px;
-    text-transform: uppercase;
     text-align: center;
 }
 
@@ -285,8 +283,10 @@ content  - belief statement section
 content - editor's pick (featured product) section
 -------------------------- */
 .editorpick{
-	padding: 20px 120px;
+	width:80%;
 	text-align: center;
+  margin:0 auto;
+  margin-bottom: 40px;
   background:#fff;
 
 }
@@ -298,25 +298,26 @@ content - editor's pick (featured product) section
 }
 
 
-.product-image img{
- float:right;
-
-}
-
-
-
-
 
 .product-intro {
   float:right;
-  width:40%;
+  width:50%;
 	margin-bottom: 20px;
-  text-align: left;
+  padding:0 20px;
 }
 
+
+
 .product-intro p{
-  text-decoration: left;
+ text-align: left;
+ padding-bottom: 20px;
 }
+
+
+.product-intro a {
+ float: left;
+}
+
 
 .featured-product h3{
   text-align: left
@@ -361,14 +362,14 @@ content - categories section
 
 .panels {
   background: #fff;
-  padding: 5px;
+  padding: 20px;
 }
 
 .topic{
   float: left;
   width:50%;
   position: relative; 
-  padding: 5px;
+  padding: 20px;
   background: none;
   
 }
@@ -400,7 +401,7 @@ content - categories section
 
 
 .topic a:hover img{
-  opacity: 0.3;
+  opacity: 0.2;
   
 }
 
@@ -466,9 +467,15 @@ content - subscription section
  position: relative;
  margin-right: -4px;
  width: 300px;
-
+ display: inline-block;
 }
 
+.email {
+  display: inline-block;
+}
+.signup{
+  display: inline-block;
+}
 
 /*------------------------
 Buttons
@@ -503,8 +510,6 @@ Buttons
     line-height: 24px;
     text-align: center;
     text-decoration: none;
-    float:left;
-
 }
 
 
@@ -725,86 +730,255 @@ Responsive Styles
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
+
+        body{
+          border-top: 3px solid yellow;
+
+        }
         .container {
             width:100%;
         }
 
-        .features .feature {
+         .nav li {
             width: 100%;
         }
+         
 
-        .nav li {
-            width: 100%;
+        .product-image{
+          width:100%;
+        }
+
+        .product-intro{
+          width:100%;
         }
 
 
-        .promo .promo-img {
-            width: 100%;
+        .topic{
+          width:100%;
+
+        }
+
+        .blog p{
+          padding:20px 100px;
         }
 
 
-        .promo .promo-content {
-            width: 100%;
-        }
 
+
+        
 
 
     }
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
+       
+       body{
+          border-top: 3px solid red;
+
+        }  
+
         .container {
             width:100%;
         }
 
-        .features .feature {
-            width: 100%;
-        }
-
-        .nav li {
+         .nav li {
             width: 100%;
         }
 
 
-        .promo .promo-img {
-            width: 100%;
+         .belief {
+            padding:20px 20px;
+         }
+
+
+
+        .product-image{
+          width:100%;
+        }
+
+        .product-intro{
+          padding:20px 20px;
+          text-align: center;
+
+        }
+
+         
+
+        .product-intro a{
+          float:none;
         }
 
 
-        .promo .promo-content {
-            width: 100%;
+       .categories {
+        padding:20px 20px;
+       }
+             
+        .topic{
+          width:100%;
+          padding:5px 0px 20px 0px;
+
+        }
+
+        .topic:last-of-type{
+          padding-bottom:5px ;
+        }
+
+
+
+        .topic img{
+          padding-bottom: 30px;
+        }
+
+
+        .blog p{
+          padding:20px 100px;
+        }
+
+         
+
+
+       .subscribe input {
+            
+            width: 200px;
         }
     
-    }
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
-        .container {
+        
+        body{
+          border-top: 3px solid green;
+
+        }  
+         .container {
             width:100%;
         }
 
-        .features .feature {
+         .nav li {
             width: 100%;
         }
 
-        .nav li {
-            width: 100%;
+        .carousel{
+          background-size:  auto, cover;
+          padding: 10px 20px 40px 20px;
         }
 
 
-        .promo .promo-img {
-            width: 100%;
+        h1.tagline span {
+          font-size: 40px;
+          font-weight: 600;
+          padding: 10px 0px 5px 0px;
+              
+      }
+
+
+        a.scroll-down{
+          display:none;
+        }
+
+         .belief p{
+            padding:20px 20px;
+         }
+
+         .editorpick {
+           width: 100%;
+         }
+
+        .product-image{
+          width:100%;
+         }
+
+        .product-image img{
+          width:80%;
+        }
+
+        .product-intro{
+          width:100%;
         }
 
 
-        .promo .promo-content {
-            width: 100%;
+        .product-intro p{
+          padding:20px 20px;
         }
-    }
+
+
+        .categories {
+          padding: 5px 0 20px 0;
+        }
+
+        .panels {
+          padding: 0px;
+        }
+        
+        .topic{
+          width:100%;
+          padding:;
+        }
+
+
+        .topic:first-of-type{
+           padding-top: 25px;
+        }
+
+
+         .topic:last-of-type{
+           padding-bottom: 25px;
+        }
+
+        .blog p{
+          padding:20px 20px;
+        }
+
+        .blog img{
+          width:80%;
+        }
+
+         .subscribe input{
+          padding-bottom: 10px;
+          border-radius: 10px;
+          width: 100%;
+         }
+
+         .subscribe .email{
+          display: inline-block;
+          padding-bottom: 5px;
+          width:100%;
+         }
+
+         .subscribe .signup{
+          width: 100%;
+          margin-left: 2px;
+        }
+
+          
+        .signup .button-register{
+           width: 100%;
+           border-radius: 10px;
+        }
+
+
+        .icon.circle {
+          -moz-transition: all 0.2s ease-in-out;
+          -webkit-transition: all 0.2s ease-in-out;
+          -ms-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+          border: 0;
+          border-radius: 100%;
+          display: inline-block;
+          font-size: 10px;
+
+        }
+    
 
     /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
 
+
+         body{
+          border-top: 3px solid black;
+
+        }  
             .container {
             width:100%;
         }

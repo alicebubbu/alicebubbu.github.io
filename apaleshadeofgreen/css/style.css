@@ -69,7 +69,7 @@ h3 {
     font-size: 20px;
     font-weight: 300;
     line-height: 1.75em;
-    margin-bottom: 1em;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
 
@@ -332,7 +332,7 @@ content - editor's pick (featured product) section
 content - categories section
 -------------------------- */
 .categories{
-	padding: 20px 50px;
+	padding: 20px 80px 50px 80px;
 	text-align: center;
   background:#E8EEF4;
 }
@@ -416,8 +416,9 @@ content - categories section
 content - featured blog article section
 -------------------------- */
 .blog {
-  padding-bottom: 50px;
+  padding:20px 0 50px 0;
   text-align: center;
+  background:#f0efef;
 
 }
 
@@ -454,11 +455,12 @@ content - subscription section
 	text-align: center;
 	background: url(../images/banner.jpg);
 	color:#000;
-	padding: 30px;
+	padding: 30px 30px 50px 30px;
 }
 
 .subscribe h2 {
   color: white;
+  padding-bottom: 10px;
 }
 
 .subscribe input{
@@ -545,15 +547,20 @@ Buttons
 
 
 /*------------------------
-body content style
+
+
+
+Blog Article page
+
+
 -------------------------- */
 .bodycontent {
 background-color: #f0efef;
-padding:10px 20px;
+padding:20px 20px;
 }
 
 /*------------------------
-main column 
+main column for articles
 -------------------------- */
 .main-column {
 float:left;
@@ -561,10 +568,34 @@ width:70%;
 padding-right: 10px;
 }
 
-article{
+
+article {
 margin-left: 10px;
 padding: 20px 20px 50px 10px;
+border-bottom: solid 2px white;
+margin-bottom: 30px;
+background:#fff;
 }
+
+
+article h2{
+ text-align: left;
+ font-weight: 600;
+ padding:20px 0;
+}
+
+
+article img{
+ margin:0 auto;
+ width: 100%;
+}
+
+.date p{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
 
 .firstcharacter {
   float: left;
@@ -577,11 +608,13 @@ padding: 20px 20px 50px 10px;
 }
 
 .main-column a{
-font-size: 24px;
+font-size: 20px;
 font-weight: 600;
-color: #033048;
+color: #69C9BD;
 text-decoration: none;
-float:right;
+border-bottom: 2px solid #69C9BD;
+float:left;
+padding-top:15px;
 }
 
 
@@ -599,9 +632,10 @@ padding-left: 10px;
 
 
 .side-column h3{
- font-size: 32px;
+ font-size: 20px;
  font-weight: 800;
- color:#033048
+ line-height: 45px;
+ color:#69C9BD
 }
 
 .side-column li{
@@ -609,23 +643,30 @@ padding-left: 10px;
 }
 
 
-.side-column a{
- font-size: 24px;
+.Archive a{
+ font-size: 14px;
  font-weight:300;
+ line-height: 30px;
  text-decoration:none; 
- color:#033048;
+ color:#7C8081;
+}
+
+.Categories a{
+  font-size:18px;
+  font-weight:400;
+  line-height: 40px;
+  padding-bottom: 5px;
+  text-decoration:none;
+  color:#7C8081;
+  border-bottom: 2px solid #CBCDCD;
+
 }
 
 
-.side-column #learn-more{
-font-size: 22px;
-font-weight: 600;
-}
 
 .Categories,
-.About,
-.Ad{
-padding: 20px 10px 50px 10px;
+.Archive {
+padding: 65px 10px 20px 10px;
 }
 
 
@@ -634,9 +675,9 @@ padding: 20px 10px 50px 10px;
 footer  - site footer
 -------------------------- */
 .site-footer {
-  padding: 5px 100px 5px 100px;
+  padding: 20px 100px 5px 100px;
   text-align: center;
- }
+}
 
 
 .site-footer a{
@@ -733,8 +774,8 @@ Responsive Styles
 
         body{
           border-top: 3px solid yellow;
-
         }
+
         .container {
             width:100%;
         }
@@ -768,7 +809,7 @@ Responsive Styles
         
 
 
-    }
+    
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
@@ -800,7 +841,6 @@ Responsive Styles
         .product-intro{
           padding:20px 20px;
           text-align: center;
-
         }
 
          
@@ -836,11 +876,8 @@ Responsive Styles
         }
 
          
-
-
        .subscribe input {
-            
-            width: 200px;
+          width: 200px;
         }
     
 
@@ -904,7 +941,7 @@ Responsive Styles
 
 
         .categories {
-          padding: 5px 0 20px 0;
+          padding: 5px 0 50px 0;
         }
 
         .panels {
@@ -967,6 +1004,21 @@ Responsive Styles
           border-radius: 100%;
           display: inline-block;
           font-size: 10px;
+
+        }
+
+       .bodycontent {
+          background-color: #f0efef;
+          padding: 20px 5px;
+        }
+        .main-column {
+          width:100%;
+          padding:10px 5px;
+        }
+
+
+        .side-column {
+          width:100%;
 
         }
     

@@ -339,6 +339,7 @@ content - categories section
 	text-align: center;
   background:#E8EEF4;
 }
+
 .categoryHeading {
     position: absolute;
     top: 50%;
@@ -374,13 +375,11 @@ content - categories section
   position: relative; 
   padding: 20px;
   background: none;
-  
-}
+ }
 
 
 
 .topic:nth-of-type(odd){
-
 }
 
 .topic a img {
@@ -407,10 +406,6 @@ content - categories section
   opacity: 0.2;
   
 }
-
-
-
-
 
 
 
@@ -559,7 +554,7 @@ Blog Article page
 -------------------------- */
 .bodycontent {
 background-color: #f0efef;
-padding:20px 20px;
+padding:20px 60px;
 }
 
 /*------------------------
@@ -574,7 +569,7 @@ padding-right: 10px;
 
 article {
 margin-left: 10px;
-padding: 20px 20px 50px 10px;
+padding: 20px 20px 50px 20px;
 border-bottom: solid 2px white;
 margin-bottom: 30px;
 background:#fff;

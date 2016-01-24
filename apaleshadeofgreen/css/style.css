@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+
 
 
 /*------------------------
@@ -74,7 +74,7 @@ h3 {
 }
 
 
-p { font-size: 18px;
+p { font-size: 16px;
 	  font-weight: 300;
     line-height: 27px;
     
@@ -177,6 +177,9 @@ Masthead section
 }
 
 
+.nav a #active { 
+  color: yellow; 
+}
 
 
 /*------------------------
@@ -772,9 +775,6 @@ Responsive Styles
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
 
-        body{
-          border-top: 3px solid yellow;
-        }
 
         .container {
             width:100%;
@@ -814,10 +814,7 @@ Responsive Styles
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
        
-       body{
-          border-top: 3px solid red;
 
-        }  
 
         .container {
             width:100%;
@@ -884,10 +881,7 @@ Responsive Styles
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
         
-        body{
-          border-top: 3px solid green;
 
-        }  
          .container {
             width:100%;
         }
@@ -1014,11 +1008,13 @@ Responsive Styles
         .main-column {
           width:100%;
           padding:10px 5px;
+
         }
 
 
         .side-column {
           width:100%;
+          text-align: center;
 
         }
     
@@ -1027,11 +1023,7 @@ Responsive Styles
     @media only screen and (max-width : 320px) {
 
 
-         body{
-          border-top: 3px solid black;
-
-        }  
-            .container {
+        .container {
             width:100%;
         }
 

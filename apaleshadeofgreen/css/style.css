@@ -251,13 +251,13 @@ a.scroll-down {
 
 
     .owl-carousel .button{
-    display: block;
-    z-index: 2;
-    position: absolute;
-    top: 300px;
-    width:200px;
-    left:50%;
-    margin-left: -100px;
+      display: block;
+      z-index: 2;
+      position: absolute;
+      top: 300px;
+      width:200px;
+      left:50%;
+      margin-left: -100px;
     }
 
 
@@ -286,7 +286,7 @@ a.scroll-down {
     }
 
     .owl-dots{
-       position:absolute;
+        position:absolute;
         z-index: 2;
         bottom: 10px;
         left:50%;
@@ -892,6 +892,9 @@ Responsive Styles
           font-size: 60px;
         }
 
+        p{
+          font-size: 20px;
+        }
 
         .owl-carousel .slide h1 {
           top: 200px;
@@ -913,6 +916,9 @@ Responsive Styles
           padding:50px 500px;
         }
 
+        .belief p{
+          font-size: 20px;
+        }
 
         .editorpick{
           padding:50px 200px;
@@ -926,15 +932,24 @@ Responsive Styles
         .blog a{
           margin-bottom: 40px;
         }
+
+        .blog p{
+          font-size: 20px;
+        }
+
       }
 
     /* Desktops and laptops ----------- */
     @media only screen and (min-width : 1224px) {
          
          .wrapper {
-            width:100%;
+            width: 90%;
+            margin:0 auto;
         }
 
+        p {
+          font-size: 20px;
+        }
 
         h1.tagline span  {
           font-size:60px;
@@ -957,7 +972,11 @@ Responsive Styles
 
 
         .belief{
-          padding:50px 500px;
+          padding:50px 400px;
+        }
+
+        .belief p{
+          font-size: 20px;
         }
 
 
@@ -967,11 +986,15 @@ Responsive Styles
 
 
         .blog{
-          padding:20px 400px;
+          padding:20px 300px;
         }
 
         .blog a{
           margin-bottom: 40px;
+        }
+
+        .blog p{
+          font-size: 20px;
         }
 
       }
@@ -1008,7 +1031,7 @@ Responsive Styles
           padding:20px 100px;
         }  
 
-
+    }
     
 
     /* Small Devices, Tablets */
@@ -1115,7 +1138,7 @@ Responsive Styles
           text-align: center;
         }
     
-    
+     }
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
@@ -1262,7 +1285,7 @@ Responsive Styles
           text-align: center;
 
         }
-    
+    }
 
     /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
@@ -1307,4 +1330,4 @@ Responsive Styles
           text-align: center;
 
         }
-    
+      }

@@ -976,6 +976,10 @@ Responsive Styles
           font-size: 16px;
         }
 
+        .button.button-primary{
+          font-size: 20px;
+        }
+
        
  
         .owl-carousel .slide h1 {

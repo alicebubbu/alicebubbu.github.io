@@ -103,8 +103,11 @@ a {
 color: #333;
 }
 
+
+
 /*--------------------------------------------
-helpers---------------------------------------*/
+helpers
+--------------------------------------------*/
 
 .clearfix:after {
     content: "";
@@ -125,7 +128,6 @@ Masthead section
 -------------------------- */
 .masthead {
      background: #f0efef;
-   
 }
 
 
@@ -142,6 +144,10 @@ Masthead section
 
 }
 
+.logo a{
+  text-decoration: none;
+}
+
 
 
 /* Navigation */
@@ -156,30 +162,31 @@ Masthead section
 }
 
 
-.nav li{
-  margin: 0;
-  padding: 5px 0 5px 0;
-  display: inline-block;
-}
+    .nav li{
+      margin: 0;
+      padding: 5px 0 5px 0;
+      display: inline-block;
+    }
 
 
-.nav a {
-    color:#7c8081;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
-}
+    .nav a {
+        color:#7c8081;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+    }
 
-.nav a:hover {
-    color: rgb(131, 211, 201);
-    
-}
+    .nav a:hover {
+        color: rgb(131, 211, 201);
+        
+    }
 
 
-.nav a #active { 
-  color: yellow; 
-}
+    .nav a.selected { 
+      border-bottom: 1px dotted #7C8081;
+    }
 
 
 /*------------------------
@@ -187,35 +194,10 @@ Homepage carousel
 -------------------------- */
 
 
-.carousel {
-    color: #fff;
-    padding: 100px 20px 500px 20px;
-    text-align: center;
-    background: url(../images/carousel-image.jpg) no-repeat center;
-    background-size: cover;
-    position: relative;
-}
-/* tagline */
-
-
-h1.tagline{
-margin: 100px 0 50px 0;
-}
-
-h1.tagline span  {
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 60px;
-    padding: 10px 0px 5px 0px;
-    text-shadow:0 0 50px rgba(0, 0, 0, 0.8);
-    border-bottom: solid 4px #fff;
-    text-transform: uppercase;
-    
-  }
 
 /* Learn more button */
 
-.carousel .button{
+.owl-carousel .button{
 display: block;
 margin: 0 auto;
 }
@@ -237,10 +219,12 @@ a.scroll-down {
     position: absolute;
     text-align: center;
     display: block;
-    bottom: 80px;
+    bottom: 50px;
     left: 50%;
     margin-left: -30px;
 }
+
+
 .fa {
     display: inline-block;
     font-family: FontAwesome;
@@ -251,6 +235,93 @@ a.scroll-down {
     -moz-osx-font-smoothing: grayscale;
     color:#fff;
 }
+
+
+/* owl-carousel */
+
+.owl-carousel {
+  text-align: center;
+  background-size: cover;
+}
+
+    .owl-carousel .slide {
+      position: relative;
+    }
+
+
+
+    .owl-carousel .button{
+    display: block;
+    z-index: 2;
+    position: absolute;
+    top: 300px;
+    width:200px;
+    left:50%;
+    margin-left: -100px;
+    }
+
+
+
+    .owl-carousel .slide img {
+      position: relative;
+      z-index: 0;
+      padding:0;
+    }
+
+
+    .owl-carousel .owl-controls .owl-dot {
+        cursor: pointer;
+        background-color: rgb(124, 128, 129);
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 10px;
+        margin: 0 5px;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .owl-dots{
+       position:absolute;
+        z-index: 2;
+        bottom: 10px;
+        left:50%;
+        margin-left:-30px;
+    }
+
+    .owl-carousel .owl-controls .owl-dot.active{
+        background-color: rgb(131, 211, 201);
+    }
+
+
+    .owl-carousel .slide h1 {
+      position: absolute;
+      top: 100px;
+      z-index: 1;
+      width: 100%;
+    }
+
+
+
+/* tagline */
+
+
+h1.tagline span  {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 80px;
+    padding: 10px 0px 5px 0px;
+    text-shadow:0 0 50px rgba(0, 0, 0, 0.8);
+    border-bottom: solid 4px #fff;
+    text-transform: uppercase;
+    margin: 100px 0 50px 0;
+   
+  }
+
 
 
 
@@ -270,18 +341,15 @@ content  - belief statement section
   font-size: 25px;
   line-height:40px;
   font-weight: 600;
+  padding-bottom: 0;
 }
 
 .belief p{
   font-size: 18px;
   line-height:30px;
   font-weight: 400;
+  margin-top: 0;
 }
-
-
-
-
-
 
 
 
@@ -431,28 +499,29 @@ content - featured blog article section
 
 }
 
-.blog p{
- padding:0px 200px 0 200px;
-}
+    .blog p{
+     padding:0px 200px 0 200px;
+     text-align: center;
+    }
 
 
 
-.blog img{
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: 50%;
+    .blog img{
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      margin:0 auto;
+      display: block;
 
-}
+    }
 
-.blog a{
-  display:inline-block;
+    .blog a{
+      display:inline-block;
+      margin-top: 40px;
+    }
 
-}
 
 
-.blogintro {
- text-align: center;
-}
 
 
 /*------------------------
@@ -466,90 +535,187 @@ content - subscription section
 	padding: 30px 30px 50px 30px;
 }
 
-.subscribe h2 {
-  color: white;
-  padding-bottom: 10px;
-}
 
-.subscribe input{
- border: none;
- padding: 11px 9px 8px 9px;
- position: relative;
- margin-right: -4px;
- width: 300px;
- display: inline-block;
-}
+      .subscribe h2 {
+        color: white;
+        padding-bottom: 10px;
+      }
 
-.email {
-  display: inline-block;
-}
-.signup{
-  display: inline-block;
-}
+
+      .email {
+        display: inline-block;
+      }
+
+
+            .email input{
+             border: none;
+             padding: 11px 9px 8px 9px;
+             position: relative;
+             margin-right: -4px;
+             width: 300px;
+             display: inline-block;
+            }
+
+
+      .signup{
+        display: inline-block;
+            }
 
 /*------------------------
 Buttons
 -------------------------- */
 
 .button {
-	
-  border-radius: 10px;
+	border-radius: 10px;
 	text-decoration: none;
-  
 }
 
-.button-primary {
-		color: white;
-		font-size: 18px;	
-    background: rgb(131, 211, 201);
-    font-weight:800;
-    border: none;
-    padding: 15px 30px;
-    width: 200px;
-    
+      .button-primary {
+      		color: white;
+      		font-size: 18px;	
+          background: rgb(131, 211, 201);
+          font-weight:800;
+          border: none;
+          padding: 15px 30px;
+          width: 200px;
+          
+      }
+
+      .button-read-more{
+          background: none;
+          border: solid 1px;
+          color: inherit;
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 600;
+          padding: 10px 30px;
+          line-height: 24px;
+          text-align: center;
+          text-decoration: none;
+      }
+
+
+      .button-register {
+      		color:#fff;
+      		font-size: 16px;		
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          font-weight: 300;
+          line-height: 24px;
+          background: rgb(131, 211, 201);
+          border: none;
+          padding: 6px 30px;
+          margin-bottom: -1px;
+
+
+      }
+
+      .button-more{
+          background: none;
+          border: solid 1px;
+          color: inherit;
+          display: inline-block;
+          font-size: 16px;
+          font-weight: 800;
+          padding: 10px 35px;
+          line-height: 24px;
+          text-align: center;
+          text-decoration: none;
+      }
+
+
+
+
+
+
+/*------------------------
+footer  - site footer
+-------------------------- */
+.site-footer {
+  padding: 20px 100px 5px 100px;
+  text-align: center;
 }
 
-.button-read-more{
-    background: none;
-    border: solid 1px;
-    color: inherit;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 10px 30px;
-    line-height: 24px;
-    text-align: center;
+
+    .site-footer a{
+      text-decoration: none;
+       
+    }
+
+
+    .site-footer ul{
+      padding-left: 0;
+
+    }
+    .site-footer li{
+      list-style: none;
+      display: inline-block;
+
+    }
+
+/*------------------------
+Icons 
+-------------------------- */
+
+.icons {
     text-decoration: none;
-}
+    position: relative;
+  }
+
+    .icon:before {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-transform: none !important;
+    }
 
 
-.button-register {
-		color:#fff;
-		font-size: 16px;		
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    font-weight: 300;
-    line-height: 24px;
-    background: rgb(131, 211, 201);
-    border: none;
-    padding: 6px 30px;
-    margin-bottom: -1px;
+    .icon.circle {
+        -moz-transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        border: 0;
+        border-radius: 100%;
+        display: inline-block;
+        font-size: 20px;
+        line-height: 2.25em;
+        text-align: center;
+        text-decoration: none;
+        top: 0;
+        left: 0;
+        width: 2.25em;
+    }
+
+/*------------------------
+Icons - facebook 
+-------------------------- */
+
+        .icon.circle.fa-facebook {
+            background: #7490c3;
+            color: #fff;
+        }
+
+/*------------------------
+Icons - Instagram
+-------------------------- */
+        .icon.circle.fa-instagram {
+            background: #125688;
+            color: #fff;
+        }
 
 
-}
+/*------------------------
+Icons - Pinterest
+-------------------------- */
 
-.button-more{
-    background: none;
-    border: solid 1px;
-    color: inherit;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 800;
-    padding: 10px 35px;
-    line-height: 24px;
-    text-align: center;
-    text-decoration: none;
-}
+        .icon.circle.fa-pinterest {
+            background: #cb2027;
+            color: #fff;
+        }
+
 
 
 
@@ -577,64 +743,62 @@ padding-right: 10px;
 }
 
 
-article {
-margin-left: 10px;
-padding: 20px 50px 70px 50px;
-border-bottom: solid 2px white;
-margin-bottom: 30px;
-background:#fff;
-}
-
-
-article h2{
- text-align: left;
- font-weight: 600;
- padding:20px 0;
-}
-
-
-
-article p{
-  line-height: 30px;
-}
-
-article img{
- margin:0 auto;
- width: 100%;
- padding-bottom: 20px;
-}
-
-.date p{
-  font-size: 14px;
-  font-weight: 400;
-}
-
-
-
-.firstcharacter {
-  float: left;
-  font-size: 80px;
-  line-height: 65px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
+  .main-column a{
+  font-size: 20px;
   font-weight: 600;
-}
+  color: #69C9BD;
+  text-decoration: none;
+  border-bottom: 2px solid #69C9BD;
+  float:left;
+  padding-top:15px;
+  }
 
-.main-column a{
-font-size: 20px;
-font-weight: 600;
-color: #69C9BD;
-text-decoration: none;
-border-bottom: 2px solid #69C9BD;
-float:left;
-padding-top:15px;
-}
+    article {
+    margin-left: 10px;
+    padding: 20px 50px 70px 50px;
+    border-bottom: solid 2px white;
+    margin-bottom: 30px;
+    background:#fff;
+    }
+
+
+        article h2{
+         text-align: left;
+         font-weight: 600;
+         padding:20px 0;
+        }
+
+        article p{
+          line-height: 30px;
+        }
+
+        article img{
+         margin:0 auto;
+         width: 100%;
+         padding-bottom: 20px;
+        }
+
+        p.date{
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+
+        .firstcharacter{
+          float: left;
+          font-size: 80px;
+          line-height: 65px;
+          padding-top: 4px;
+          padding-right: 8px;
+          padding-left: 3px;
+          font-weight: 600;
+        }
+
 
 
 
 /*------------------------
-side column for homepage
+side column 
 -------------------------- */
 
 
@@ -647,27 +811,27 @@ background:#fff;
 }
 
 
-.side-column h3{
- font-size: 20px;
- font-weight: 800;
- line-height: 45px;
- color:#69C9BD
-}
+    .side-column h3{
+     font-size: 20px;
+     font-weight: 800;
+     line-height: 45px;
+     color:#69C9BD
+    }
 
-.side-column li{
- list-style-type: none;
-}
+    .side-column li{
+     list-style-type: none;
+    }
 
 
 .Archive a{
- font-size: 14px;
+ font-size: 18px;
  font-weight:300;
  line-height: 30px;
  text-decoration:none; 
  color:#7C8081;
 }
 
-.Categories a{
+.blogCategories a{
   font-size:18px;
   font-weight:400;
   line-height: 40px;
@@ -675,105 +839,39 @@ background:#fff;
   text-decoration:none;
   color:#7C8081;
   border-bottom: 2px dotted #CBCDCD;
-
 }
 
 
 
-.Categories,
+.blogCategories,
 .Archive {
 padding: 65px 10px 20px 10px;
 }
 
 
-
 /*------------------------
-footer  - site footer
+
+
+
+Blog post page
+
+
 -------------------------- */
-.site-footer {
-  padding: 20px 100px 5px 100px;
-  text-align: center;
+.blogbodycontent {
+  background-color: #f0efef;
+  padding:20px 30px;
 }
 
-
-.site-footer a{
-  text-decoration: none;
-   
-}
-
-
-.site-footer ul{
-  padding-left: 0;
-
-}
-.site-footer li{
-  list-style: none;
-  display: inline-block;
-
-}
-
-/*------------------------
-Icons 
--------------------------- */
-
-.icons {
-    text-decoration: none;
-    position: relative;
-  }
-
-    .icon:before {
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-smoothing: antialiased;
-      font-family: FontAwesome;
-      font-style: normal;
-      font-weight: normal;
-      text-transform: none !important;
+    .blogbodycontent .main-column{
+      width:78%;
     }
 
 
-.icon.circle {
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    border: 0;
-    border-radius: 100%;
-    display: inline-block;
-    font-size: 20px;
-    left: 0;
-    line-height: 2.25em;
-    text-align: center;
-    text-decoration: none;
-    top: 0;
-    width: 2.25em;
-}
-
-/*------------------------
-Icons - facebook 
--------------------------- */
-
-    .icon.circle.fa-facebook {
-        background: #7490c3;
-        color: #fff;
+    .blogbodycontent .side-column{
+      width:20%;
     }
 
-/*------------------------
-Icons - Instagram
--------------------------- */
-    .icon.circle.fa-instagram {
-        background: #125688;
-        color: #fff;
-    }
-
-
-/*------------------------
-Icons - Pinterest
--------------------------- */
-
-    .icon.circle.fa-pinterest {
-        background: #cb2027;
-        color: #fff;
-    }
+      
 
 
 
@@ -838,6 +936,25 @@ Responsive Styles
         }
 
 
+        h1.tagline span  {
+          font-size:30px;
+        }
+
+
+        .owl-carousel .slide h1 {
+          top: 50px;
+        }
+
+
+         .owl-carousel .button{ 
+            top:250px;
+        }
+
+
+         a.scroll-down {
+          display: none;
+        }
+
          .belief {
             padding:20px 20px;
          }
@@ -846,6 +963,10 @@ Responsive Styles
 
         .product-image{
           width:100%;
+        }
+
+        .product-image img{
+          width:60%;
         }
 
         .product-intro{
@@ -889,6 +1010,22 @@ Responsive Styles
        .subscribe input {
           width: 200px;
         }
+
+
+        .bodycontent {
+          padding: 20px 20px 20px 20px;
+        }
+
+        .main-column{
+           width: 100%;
+           
+        }
+
+         .side-column {
+          width:100%;
+          text-align: center;
+        }
+    
     
 
     /* Extra Small Devices, Phones */ 
@@ -903,27 +1040,33 @@ Responsive Styles
             width: 100%;
         }
 
-        .carousel{
+        .owl-carousel{
           background-size:  auto, cover;
           padding: 10px 20px 40px 20px;
         }
 
 
-        h1.tagline span {
-          font-size: 40px;
-          font-weight: 600;
-          padding: 10px 0px 5px 0px;
-              
-      }
+        h1.tagline span  {
+          font-size:30px;
+        }
+
+
+        .owl-carousel .slide h1 {
+          top: 50px;
+        }
 
 
         a.scroll-down{
           display:none;
         }
 
-         .belief p{
+        .belief h2{
+          font-size: 20px;
+        }
+        
+        .belief p{
             padding:20px 20px;
-         }
+        }
 
          .editorpick {
            width: 100%;
@@ -934,7 +1077,7 @@ Responsive Styles
          }
 
         .product-image img{
-          width:80%;
+          width:60%;
         }
 
         .product-intro{
@@ -1058,4 +1201,21 @@ Responsive Styles
             width: 100%;
         }
          
-    }
+        
+       .bodycontent {
+          background-color: #f0efef;
+          padding: 20px 5px;
+        }
+        .main-column {
+          width:100%;
+          padding:10px 5px;
+
+        }
+
+
+        .side-column {
+          width:100%;
+          text-align: center;
+
+        }
+    

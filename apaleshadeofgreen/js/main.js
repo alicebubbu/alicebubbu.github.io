@@ -82,6 +82,25 @@ Animated scrolling to selected section in nav bar
        1000);
     };
     
+
+
+/* ---------------------------------------------------------------------
+
+ Owl Carousel
+
+--------------------------------------------------------------------- */
+      $("#owl-carousel").owlCarousel({
+ 
+      nav : false, // Show next and prev buttons
+      items:1,
+      dots: true
+      
+
+
+ 
+  
+    });
+
 });
 
 

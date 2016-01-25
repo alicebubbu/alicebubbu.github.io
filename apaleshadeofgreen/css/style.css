@@ -218,7 +218,7 @@ a.scroll-down {
     position: absolute;
     text-align: center;
     display: block;
-    bottom: 50px;
+    top: 80%;
     left: 50%;
     margin-left: -30px;
 }
@@ -253,7 +253,7 @@ a.scroll-down {
       display: block;
       z-index: 2;
       position: absolute;
-      top: 300px;
+      top: 60%;
       width:200px;
       left:50%;
       margin-left: -100px;
@@ -908,7 +908,7 @@ Responsive Styles
 
        
         .owl-carousel .slide h1 {
-          top: 200px;
+          top: 250px;
         }
 
 
@@ -963,7 +963,7 @@ Responsive Styles
         }
 
         h1.tagline span  {
-          font-size:60px;
+          font-size:50px;
         }
 
         h2{
@@ -980,7 +980,7 @@ Responsive Styles
 
  
         .owl-carousel .slide h1 {
-          top: 150px;
+          top: 200px;
         }
 
 
@@ -1035,6 +1035,9 @@ Responsive Styles
             width: 100%;
         }
          
+        a.scroll-down {
+          display: none;
+        }
 
         .product-image{
           width:100%;

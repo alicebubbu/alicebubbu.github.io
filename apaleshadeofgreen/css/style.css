@@ -529,7 +529,7 @@ content - subscription section
 
 .subscribe {
 	text-align: center;
-	background: url(../images/banner.jpg) center no-repeat;
+	background: url(../images/banner1.jpg) no-repeat;
 	color:#000;
 	padding: 30px 30px 50px 30px;
 }
@@ -578,7 +578,6 @@ Buttons
           border: none;
           padding: 15px 30px;
           width: 200px;
-          
       }
 
       .button-read-more{
@@ -604,8 +603,6 @@ Buttons
           border: none;
           padding: 6px 30px;
           margin-bottom: -1px;
-
-
       }
 
       .button-more{
@@ -959,7 +956,7 @@ Responsive Styles
         }
 
         p {
-          font-size: 20px;
+          font-size: 16px;
         }
 
         h1.tagline span  {
@@ -967,17 +964,18 @@ Responsive Styles
         }
 
         h2{
-          font-size: 35px;
+          font-size: 25px;
         }
 
         h3{
-          font-size: 30px;
-        }
-
-        .button{
           font-size: 20px;
         }
 
+        .button{
+          font-size: 16px;
+        }
+
+       
  
         .owl-carousel .slide h1 {
           top: 200px;
@@ -995,7 +993,7 @@ Responsive Styles
 
 
         .belief{
-          padding:50px 400px;
+          padding:50px 200px;
         }
 
         .belief p{
@@ -1004,12 +1002,12 @@ Responsive Styles
 
 
         .editorpick{
-          padding:50px 200px;
+          padding:50px 20px;
         }
 
 
         .blog{
-          padding:20px 300px;
+          padding:20px 50px;
         }
 
         .blog a{
@@ -1017,7 +1015,7 @@ Responsive Styles
         }
 
         .blog p{
-          font-size: 20px;
+          font-size: 16px;
         }
 
       }

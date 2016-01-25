@@ -903,6 +903,26 @@ Responsive Styles
         }
 
 
+
+        .belief{
+          padding:50px 600px;
+        }
+
+
+        .editorpick{
+          padding:50px 200px;
+        }
+
+
+        .blog{
+          padding:20px 400px;
+        }
+
+        .blog a{
+          margin-bottom: 40px;
+        }
+      }
+
     /* Desktops and laptops ----------- */
     @media only screen and (min-width : 1224px) {
           
@@ -943,6 +963,9 @@ Responsive Styles
         .blog a{
           margin-bottom: 40px;
         }
+
+      }
+      
     
       /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {

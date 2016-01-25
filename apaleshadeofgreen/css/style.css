@@ -66,9 +66,11 @@ h2 {
 
 
 h3 {
-	  font-size: 20px;
+	
+    font-size: 20px;
     font-weight: 300;
     line-height: 1.75em;
+    margin-bottom: 10px;
 }
 
 
@@ -146,7 +148,7 @@ Masthead section
 
 .nav {
   margin: 0;
-  padding:5px 0 5px 0px;
+  padding:10px 0 10px 0px;
   list-style: none;
   text-align: center;
   background: #E8EEF4;
@@ -258,22 +260,24 @@ content  - belief statement section
 -------------------------- */
 .belief {
   background: #f0efef;
-  padding: 30px 200px;
+  padding: 20px 200px;
   text-align: center;
-  font-size: 30px;
-  line-height: 40px;
+  
 }
 
 
-p .intro{
+.belief h2 {
   font-size: 25px;
-  line-height: 40px;
+  line-height:40px;
   font-weight: 600;
 }
 
-p .beliefStatement{
-  font-size: 20px;
+.belief p{
+  font-size: 18px;
+  line-height:30px;
+  font-weight: 400;
 }
+
 
 
 
@@ -289,16 +293,17 @@ content - editor's pick (featured product) section
 	text-align: center;
   margin:0 auto;
   margin-bottom: 40px;
-  padding:20px;
+  background:#fff;
+  padding-top: 20px;
 
 }
-
 
 .product-image {
   width: 50%;
   float: left;
   
 }
+
 
 
 .product-intro {
@@ -309,18 +314,12 @@ content - editor's pick (featured product) section
 }
 
 
-.product-intro h3{
-  text-align: center;
-}
-
 .productname span{
-  border-top: 2px dotted #8A8D8E;
-  border-bottom: 2px dotted #8A8D8E;
-  padding-top: 5px;
+  border-bottom: 2px dotted #7c8081;
+  border-top: 2px dotted #7c8081;
   padding-bottom: 5px;
+  padding-top:5px;
 }
-
-
 
 
 .product-intro p{
@@ -352,8 +351,7 @@ content - categories section
   background:#E8EEF4;
 }
 
-
-.categoryHeading span{
+.categoryHeading {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -365,7 +363,7 @@ content - categories section
     font-size: 20px;
     font-weight: 500;
     text-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
-    line-height: 35px;
+    line-height: 1.75em;
     text-transform: uppercase;
     margin-left: -15%;
     margin-top: -21px;
@@ -390,6 +388,10 @@ content - categories section
   background: none;
  }
 
+
+
+.topic:nth-of-type(odd){
+}
 
 .topic a img {
   display: block;
@@ -423,8 +425,10 @@ content - categories section
 content - featured blog article section
 -------------------------- */
 .blog {
-  padding: 20px 0 50px 0;
+  padding:20px 0 50px 0;
   text-align: center;
+  background:#fff;
+
 }
 
 .blog p{
@@ -448,7 +452,6 @@ content - featured blog article section
 
 .blogintro {
  text-align: center;
-
 }
 
 
@@ -576,7 +579,8 @@ padding-right: 10px;
 
 article {
 margin-left: 10px;
-padding: 20px 20px 50px 20px;
+padding: 20px 50px 70px 50px;
+border-bottom: solid 2px white;
 margin-bottom: 30px;
 background:#fff;
 }
@@ -635,8 +639,10 @@ side column for homepage
 
 .side-column {
 float:right;
-width:30%;
-padding-left: 10px;
+width: 27%;
+padding: 0 20px 0 40px;
+background:#fff;
+height:100%;
 }
 
 
@@ -660,7 +666,7 @@ padding-left: 10px;
  color:#7C8081;
 }
 
-.side-column .Categories a{
+.Categories a{
   font-size:18px;
   font-weight:400;
   line-height: 40px;
@@ -668,12 +674,14 @@ padding-left: 10px;
   text-decoration:none;
   color:#7C8081;
   border-bottom: 2px dotted #CBCDCD;
+
 }
+
 
 
 .Categories,
 .Archive {
- padding: 65px 10px 20px 10px;
+padding: 65px 10px 20px 10px;
 }
 
 
@@ -804,7 +812,7 @@ Responsive Styles
         }
 
         .blog p{
-          padding:0px 100px;
+          padding:20px 100px;
         }
 
 
@@ -948,6 +956,7 @@ Responsive Styles
         
         .topic{
           width:100%;
+          padding:;
         }
 
 

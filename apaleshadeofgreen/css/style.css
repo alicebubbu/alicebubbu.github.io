@@ -199,7 +199,7 @@ Homepage carousel
 
 
 h1.tagline{
-margin: 50px 0 50px 0;
+margin: 80px 0 50px 0;
 }
 
 h1.tagline span  {
@@ -237,7 +237,7 @@ a.scroll-down {
     position: absolute;
     text-align: center;
     display: block;
-    bottom: 200px;
+    bottom: 100px;
     left: 50%;
     margin-left: -30px;
 }

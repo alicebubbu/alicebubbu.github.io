@@ -892,6 +892,14 @@ Responsive Styles
           font-size: 60px;
         }
 
+        h2{
+          font-size: 35px;
+        }
+
+        h3{
+          font-size: 30px;
+        }
+
         p{
           font-size: 20px;
         }
@@ -955,6 +963,13 @@ Responsive Styles
           font-size:60px;
         }
 
+        h2{
+          font-size: 35px;
+        }
+
+        h3{
+          font-size: 30px;
+        }
 
         .owl-carousel .slide h1 {
           top: 150px;

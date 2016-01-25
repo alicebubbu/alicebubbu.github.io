@@ -880,10 +880,53 @@ Blog post page
 Responsive Styles
 
 --------------------------------------------------------------------- */
+   /* Large screens ----------- */
+    @media only screen and (min-width : 1824px) {
+      
+        h1.tagline span  {
+          font-size:70px;
+        }
 
 
+        .owl-carousel .slide h1 {
+          top: 200px;
+        }
 
-    /* Medium Devices, Desktops */
+
+         .owl-carousel .button{ 
+            top:400px;
+        }
+
+
+         a.scroll-down {
+          bottom:300px;
+        }0
+
+
+    /* Desktops and laptops ----------- */
+    @media only screen and (min-width : 1224px) {
+          
+        h1.tagline span  {
+          font-size:60px;
+        }
+
+
+        .owl-carousel .slide h1 {
+          top: 150px;
+        }
+
+
+         .owl-carousel .button{ 
+            top:300px;
+        }
+
+
+         a.scroll-down {
+          bottom:200px;
+        }
+
+    
+      /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
 
 
@@ -912,12 +955,7 @@ Responsive Styles
 
         .blog p{
           padding:20px 100px;
-        }
-
-
-
-
-        
+        }  
 
 
     

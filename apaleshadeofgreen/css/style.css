@@ -883,6 +883,11 @@ Responsive Styles
    /* Large screens ----------- */
     @media only screen and (min-width : 1824px) {
       
+         .wrapper {
+            width:90%;
+        }
+
+
         h1.tagline span  {
           font-size: 60px;
         }
@@ -905,7 +910,7 @@ Responsive Styles
 
 
         .belief{
-          padding:50px 600px;
+          padding:50px 500px;
         }
 
 
@@ -925,7 +930,12 @@ Responsive Styles
 
     /* Desktops and laptops ----------- */
     @media only screen and (min-width : 1224px) {
-          
+         
+         .wrapper {
+            width:100%;
+        }
+
+
         h1.tagline span  {
           font-size:60px;
         }
@@ -965,13 +975,13 @@ Responsive Styles
         }
 
       }
-      
+
     
       /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
 
 
-        .container {
+        .wrapper {
             width:100%;
         }
 
@@ -1006,7 +1016,7 @@ Responsive Styles
        
 
 
-        .container {
+        .wrapper {
             width:100%;
         }
 
@@ -1111,7 +1121,7 @@ Responsive Styles
     @media only screen and (max-width : 480px) {
         
 
-         .container {
+         .wrapper {
             width:100%;
         }
 
@@ -1258,7 +1268,7 @@ Responsive Styles
     @media only screen and (max-width : 320px) {
 
 
-        .container {
+        .wrapper {
             width:100%;
         }
 

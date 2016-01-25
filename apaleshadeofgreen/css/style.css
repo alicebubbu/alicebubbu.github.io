@@ -956,7 +956,7 @@ Responsive Styles
         }
 
         p {
-          font-size: 16px;
+          font-size: 18px;
         }
 
         h1.tagline span  {
@@ -969,6 +969,7 @@ Responsive Styles
 
         h3{
           font-size: 20px;
+          margin-bottom: 30px;
         }
 
         .button{
@@ -1015,7 +1016,7 @@ Responsive Styles
         }
 
         .blog p{
-          font-size: 16px;
+          font-size: 18px;
         }
 
       }

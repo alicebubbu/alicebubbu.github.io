@@ -97,7 +97,7 @@ Animated scrolling to selected section in nav bar
       loop:true,
       autoplay:true,
       autoplayTimeout: 2000,
-      autoplayHoverPause:true
+      autoplayHoverPause:false
   
     });
 

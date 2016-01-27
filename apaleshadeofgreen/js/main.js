@@ -94,6 +94,7 @@ Animated scrolling to selected section in nav bar
       nav : false, // Show next and prev buttons
       items:1,
       dots: true,
+      loop:true,
       autoplay:true,
       autoplayTimeout: 2000,
       autoplayHoverPause:true
